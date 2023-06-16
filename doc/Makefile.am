@@ -3,7 +3,7 @@ DIA_FILES = BusSystem.dia       ManagementController.dia  SimpleHotSwap.dia \
 	    ComplexHotSwap.dia  MgmtIF.dia                Thresh.dia \
 	    Hyst.dia            ServerSystem.dia	  SimpleMonitoring.dia
 
-EXTRA_DIST = IPMI.ltx IPMI.pdf ipmi.bib ${DIA_FILES}
+EXTRA_DIST = IPMI.ltx IPMI.pdf ipmi.bib virtual-media.md ${DIA_FILES}
 
 EPS_FILES = BusSystem.eps       ManagementController.eps  SimpleHotSwap.eps \
 	    ComplexHotSwap.eps  MgmtIF.eps                Thresh.eps \
