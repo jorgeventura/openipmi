@@ -776,9 +776,9 @@ AX_CONFIG_FEATURE(
    [epoll_pwait], [This platform supports epoll(7) with epoll_pwait(2)],
    [HAVE_EPOLL_PWAIT], [This platform supports epoll(7) with epoll_pwait(2).])
 
-AC_CHECK_LIB(curses, tgetent, TERM_LIBS=-lcurses,
-   [AC_CHECK_LIB(ncursesw, tgetent, TERM_LIBS=-lncursesw,
-    [AC_CHECK_LIB(ncurses, tgetent, TERM_LIBS=-lncurses,
+AC_CHECK_LIB(curses, mvwin, TERM_LIBS=-lcurses,
+   [AC_CHECK_LIB(ncursesw, mvwin, TERM_LIBS=-lncursesw,
+    [AC_CHECK_LIB(ncurses, mvwin, TERM_LIBS=-lncurses,
       [AC_MSG_ERROR([libtermcap, libcurses or libncurses are required!])])] )] )
 AC_SUBST(TERM_LIBS)
 
